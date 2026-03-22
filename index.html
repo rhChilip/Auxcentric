@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+<link rel="stylesheet" href="mallsidor.css">
+<link href="https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&display=swap" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+<style>
+
+</style>
+<div class="topnav" id="index">
+  <div class="nav-center">
+  <a class="active" href="home.html">"I already have an account"</a>
+
+  </div>
+
+</div>
+<br>
+<br>
+<br>
+
+<h1> Welcome to Auxcentric </h1>
+
+<p2> Explore your music ride with your favorite music app! </p2>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="bilder/auxslide1.png" class="rounded">
+  <div class="text">1</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="bilder/auxslide2.png" style="width:100%" class="rounded">
+  <div class="text">2</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="bilder/auxslide3.png" style="width:100%" class="rounded">
+  <div class="text">3</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="Slide1"></span> 
+  <span class="dot" onclick="Slide2"></span> 
+  <span class="dot" onclick="Slide3"></span> 
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<div class="about-row">
+
+ <img src="bilder/Logo.png" alt="Trulli" width="500" height="333">
+
+  <div class="about-text">
+    <p>
+		We at Auxcentric are on a quest to create a platform where users can express themselves through music and personal spaces. This is possible by an integrated platform that can connect through just about every music distribution platform such as Spotify, Soundcloud and Applemusic, so that anyone and everyone can interact and find people with common interests through our expressible space feature.
+    </p>
+  </div>
+
+</div>
+
+<br>	
+
+
+<div class="Tabsinfo" id="news">
+  <h2 class="titleabove">What you can do</h2>
+
+  <div class="gridbox">
+    <div class="card">
+      <div class="icon">🎧</div>
+      <h3>Live Listening</h3>
+      <p>Show what your playing right now.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">👥</div>
+      <h3>Friend Activity</h3>
+      <p>See what your friends are listening to.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">✨</div>
+      <h3>Discover</h3>
+      <p>Find new songs through people you trust.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">📈</div>
+      <h3>Your Vibe</h3>
+      <p>Track listening habits and trends over time.</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="widgetplaying">
+  <h2 class="section-title">Now playing</h2>
+
+  <div class="playingnow">
+    <div class="album">
+	<img src="bilder/anonymousalbum.jpg" alt="Album cover">
+	</div>
+	
+    <div class="np-info">
+      <div class="title">Your song</div>
+      <div class="np-artist">your artist</div>
+
+      <div class="bar">
+        <div class="bar-fill"></div>
+      </div>
+
+      <div class="np-actions">
+        <button class="pill">💚 Like</button>
+        <button class="pill">➕ Add</button>
+        <button class="pill">↗ Share</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="widget-wrap">
+  <h2 class="section-title">Friends are listening to:</h2>
+
+  <div class="feed">
+    <div class="feedthing">
+      <div class="avatar">
+	  <img src="bilder/anonymousalbum.jpg" alt="Album cover">
+	  </div>
+      <div class="person1"><b>Your friend</b> is listening to <i>their song</i></div>
+      <div class="time">now</div>
+    </div>
+
+    <div class="feedthing">
+      <div class="avatar">
+	  <img src="bilder/anonymousalbum.jpg" alt="Album cover">
+	  
+	  </div>
+      <div class="person1"><b>Your friend</b> is listening to <i>their song</i></div>
+      <div class="time">2m</div>
+    </div>
+
+    <div class="feedthing">
+      <div class="avatar">
+	  
+	  <img src="bilder/anonymousalbum.jpg" alt="Album cover">
+	  
+	  </div>
+      <div class="person1"><b>Your friend</b> is listening to <i>their song</i></div>
+      <div class="time">6m</div>
+    </div>
+  </div>
+</div>
+
+    <div class="cta" id="info">
+        <h2>Ready to sync your vibe?</h2>
+        <p>Make an account and connect your music app and start sharing your listening in real time.</p>
+		<br>
+        <a class="cta-btn" href="https://spotify.com" target="_blank" rel="noreferrer">
+            Connect Spotify →
+        </a>
+		<br>
+		<br>
+		<a class="cta-btn2" href="https://soundcloud.com" target="_blank" rel="noreferrer">
+            Connect Soundcloud →
+        </a>
+		<br>
+		<br>
+
+		<a class="cta-btn1" href="https://applemusic.com" target="_blank" rel="noreferrer">
+            Connect Apple Music →
+        </a>
+    </div>
+	
+<footer class="footer">
+    <div class="sidatsida">
+        <div class="ikonbox">
+            <h3>Om Auxcentric</h3>
+            <p>Din musikaliska hub för självuttryck.</p>
+        </div>
+        <div class="ikonbox">
+            <h3>Kontakta Oss</h3>
+            <p>support@auxcentric.com</p>
+        </div>
+        <div class="ikonbox">
+            <h3>Sociala Medier</h3>
+            <a href="https://www.facebook.com/mohammed.daher.1441?locale=sv_SE">Facebook</a><br>
+            <a href="https://www.instagram.com/nenneost/">Instagram</a>
+        </div>
+    </div>
+</footer>
+	
+</body>
+</html>			
