@@ -58,6 +58,10 @@ p {
     margin: 18px 0 10px;
 }
 
+.pnere {
+ margin-top: auto;
+}
+
 ul {
     list-style-type: none; 
     padding: 0;           
@@ -591,9 +595,9 @@ button {
     border-radius: 16px;
 }
 
-.cta-btn { color: #1DB954; background: #1DB954; }
-.cta-btn1 { color: #ff0436; background: #ff0436; }
-.cta-btn2 { color: #ff7700; background: #ff7700; }
+.cta-btn { color: #1DB954; }
+.cta-btn1 { color: #ff0436; }
+.cta-btn2 { color: #ff7700; }
 
 /* Footer och Vänner */
 .footer {
@@ -672,7 +676,7 @@ button {
 #index .nav-center { position: static; transform: none; }
 
 @media (max-width: 740px) {
-    body { zoom: 100%; padding-top: 80px; } 
+    body { padding-top: 80px; } 
 
     .nav-search { display: none; }
     .topnav { padding: 10px; justify-content: space-between; }
