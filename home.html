@@ -97,12 +97,13 @@
 	  <p>~Now</p>
     </div>
 
-    <div class="listeningcards">
-      <div class="icon"> <img src="bilder/kendrickalbum.jpg" alt="gkmc" width="100" height="100"></div>
-      <h3>m.A.A.d city</h3>
-      <p>By Kendrick Lamar</p>
-	  <p>~3 min ago</p>
-    </div>
+   <div class="listeningcards" onclick="togglePlay(this)" style="cursor:pointer">
+        <div class="icon"><img src="bilder/kendrickalbum.jpg" width="100" height="100"></div>
+        <h3>m.A.A.d city</h3>
+        <p>By Kendrick Lamar</p>
+        <p>~3 min ago</p>
+		<audio src="musik/maadcity.flac"></audio>
+    </div>		
 
     <div class="listeningcards">
       <div class="icon"> <img src="bilder/asaprockyalbum.png" alt="dbd" width="100" height="100"></div>
@@ -213,6 +214,26 @@
         document.body.style.backgroundColor = savedColor;
     }
 </script>
+
+<script>
+	
+function togglePlay(card) {
+    const song = card.querySelector('audio');
+
+    if (song.paused) {
+        document.querySelectorAll('audio').forEach(el => {
+            el.pause();
+            el.currentTime = 0;
+        });
+
+        song.play();
+    } else {
+        song.pause();
+        card.style.background = ""; 
+    }
+}
+</script>
+
 	
 </main>
 
