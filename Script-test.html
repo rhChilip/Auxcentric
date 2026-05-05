@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auxcentric - Explore your music</title>
+    
+    <link rel="stylesheet" href="mallsidor.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+
+<header>
+    <div class="topnav">
+        <div class="nav-left">
+            <a class="active" href="home.html">Home</a>
+            <a href="social.html">Social</a>
+        </div>
+        
+        <div class="nav-search">
+            <input type="text" placeholder="Search...">
+        </div>
+		
+		<div class="nav-right">
+			<div class="nav-now-playing">
+				<div class="mini-album">
+					<img src="bilder/icant.png" alt="Album cover">
+				</div>
+				<div class="mini-info">
+					<span class="mini-title">I can't</span>
+					<div class="mini-bar">
+						<div class="mini-bar-fill"></div>
+					</div>
+				</div>
+			</div>
+            <div class="profile-circle">
+               <a href="Lucasprofil.html"><img src="bilder/Lucaspfp.jpg"  alt="Profile">  </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="hero">
+        <h1>1, 2, 3, Scripta!</h1>
+    </section>
+
+
+<br>
+<br>
+<br>
+
+<!--<button onclick="byttlila()">gillar du lila?</button>-->
+
+        <p class="p2">Pokemon?</p>
+
+<div style="text-align: center;">
+    <input type="text" id="pokemonName" placeholder="Enter Pokemon name">
+    <button onclick="fetchData()">Fetch Pokemon</button>
+
+    <br>
+
+    <img src="" alt="Pokemon Sprite" id="pokemonSprite" style="display: none; margin: 0 auto;">
+	<p class="p2" id="pokemonNumber"></p>
+
+    <div id="pokemonTypes"></div>
+	
+	<br>
+	
+    <audio id="pokemonCry" controls style="display: none; margin: 0 auto;"></audio>
+	
+	<br>
+	
+	<textarea id="dagbokinput"></textarea>
+
+	<div><button id="sparaknapp">Spara</button></div>
+	
+	<br>
+	
+	<div id="entriescontainer"></div>
+	
+    <script src="script.js"></script>
+</div>
+	
+
+<br>
+<br>
+<br>
+
+
+</main>
+
+<footer class="footer">
+    <div class="sidatsida">
+        <div class="ikonbox">
+            <h3>About Auxcentric</h3>
+            <p>Your musical hub for expression and passion</p>
+        </div>
+        <div class="ikonbox">
+            <h3>Contact us</h3>
+            <p>support@auxcentric.com</p>
+        </div>
+        <div class="ikonbox">
+            <h3>Social Media</h3>
+            <a href="https://www.facebook.com/mohammed.daher.1441?locale=sv_SE">Facebook</a><br>
+            <a href="https://www.instagram.com/nenneost/">Instagram</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
